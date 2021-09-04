@@ -1,0 +1,23 @@
+{
+  "name": "users",
+  "version": "1.0.0",
+  "description": "",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "sls deploy",
+    "remove": "sls remove",
+    "offline" : "sls offline start",
+    "dynamodb" : "sls dynamodb start",
+    "debug" : "NODE_OPTIONS='--inspect' sls offline start"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aws-sdk": "^2.982.0",
+    "query-string": "^7.0.1"
+  },
+  "devDependencies": {
+    "serverless-dynamodb-local": "^0.2.40",
+    "serverless-offline": "^8.0.0"
+  }
+}
